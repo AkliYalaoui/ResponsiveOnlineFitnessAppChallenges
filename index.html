@@ -6,12 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <title>vuejs-cli</title>
+    <title>Fitness App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="app"></div>
-    <script src="/dist/build.js"></script>
+  <header>
+      <h1>TODAY'S TASK</h1>
+  </header>
+  <div id="video-app">
+      <div class="container-h3">
+          <h3>Marathon Unning Prep</h3>
+          <div class="Stat">
+              <span class="material-icons">
+                  show_chart
+              </span>
+          </div>
+      </div>
+      <div class="container">
+          <video id="videoSrc"></video>
+          <div  id="overlay" class="overlay">
+              <div>
+                  <span onclick="playVideo()" class="material-icons" title="Play video">
+                      play_arrow
+                  </span>
+              </div>
+              <div>
+                  <h4><span></span>Training <span>1h a day</span></h4>
+                  <p>Daily workouts to help your body become more resilient during a marathon</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="task-app">
+      <div class="container">
+          <div>
+              <h4><span></span>Distance <span>1h a day</span></h4>
+              <p>Daily running training .Distance 10kmm</p>
+          </div>
+          <div>
+              <h4><span></span>Water balance <span>1.8l a day</span></h4>
+              <p>Maintain your optimal water balance as recommended by the trainer</p>
+          </div>
+      </div>
+  </div>
+  <div id="tast-d">
+      <div class="container">
+          <div>
+              <div class="task-done">
+                  <span class="material-icons">
+                      chat_bubble
+                  </span>
+              </div>
+          </div>
+      </div>
+
+      <footer>
+          <ul>
+              <li>
+                  <a href="">
+                      <span class="material-icons">
+                          home
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+                      <span class="material-icons">
+                          chat_bubble
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+                      <span class="material-icons">
+                          account_circle
+                      </span>
+                  </a>
+              </li>
+              <li>
+                  <a href="">
+                      <span class="material-icons">
+                          search
+                      </span>
+                  </a>
+              </li>
+          </ul>
+      </footer>
+  </div>
+  <script src="app.js"></script>
 </body>
 
 </html>

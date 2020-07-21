@@ -1,0 +1,236 @@
+
+/* START GLOBAL RULES*/
+*,
+*::after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fee5e1;
+}
+/* START HEADER */
+header {
+    background-color: #4f4ee9;
+    width: 100%;
+    min-width: 300px;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    padding: 30px 0 10px;
+}
+/* START VIDEO SECTION*/
+#video-app {
+    width: 100%;
+    background-color: #4f4ee9;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+#video-app .container-h3 {
+    min-width: 300px;
+    max-width: 600px;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-h3 h3 {
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.container-h3 .Stat {
+    width: 30px;
+    height: 30px;
+    background-color: #fee5e1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #f18776;
+    margin-bottom: 20px;
+}
+#video-app .container {
+    min-width: 300px;
+    max-width: 600px;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0px;
+    color: #fff;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(255, 255, 255, .2), -3px -3px 5px rgba(255, 255, 255, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay>div:first-of-type {
+    position: absolute;
+    top: 50px;
+    left: 13%;
+    background-color: #252767;
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20%;
+}
+
+.overlay>div:last-of-type {
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.overlay h4 {
+    width: 90%;
+    display: flex;
+    position: relative;
+    margin: 0px 5% 10px;
+}
+
+.overlay h4 span:first-of-type {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.overlay h4 span:last-of-type {
+    position: absolute;
+    opacity: .7;
+    right: 6%;
+}
+#task-app {
+    width: 100%;
+    background-color: #4f4ee9;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#task-app  .container {
+    min-width: 300px;
+    max-width: 600px;
+    position: relative;
+}
+
+#task-app .container>div:first-of-type,
+#task-app  .container>div:nth-child(2) {
+    margin-top: 10px;
+    color: #fff;
+    background-color: #3938cd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#task-app  h4 {
+    width: 90%;
+    display: flex;
+    position: relative;
+    margin: 0px 5% 10px;
+}
+
+#task-app  h4 span:first-of-type {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#task-app  h4 span:last-of-type {
+    position: absolute;
+    opacity: .7;
+    right: 6%;
+}
+#tast-d .container {
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #4f4ee9;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#tast-d   .container>div {
+    padding: 10px 10px 15px;
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
+    height: 65px;
+
+}
+
+#tast-d .task-done {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-color: #fee5e1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #f18776;
+    align-items: center;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+#tast-d  .task-done:after {
+    content: '';
+    height: 6px;
+    width: 9px;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    position: absolute;
+    top: 14px;
+    transform: rotate(-70deg);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+ul > li:first-of-type > a{
+     color: #f18776;
+    opacity: 1;
+}
+a{
+    text-decoration: none;
+   color: #f49b8e;
+    opacity: .7;
+}
